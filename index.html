@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maneendra's Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="dark-mode">
+  <header>
+    <h1>Kummari Maneendra</h1>
+    <p>Aspiring Software Development Engineer | Full-Stack Developer | Java & Python Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#strengths">Strengths</a>
+      <a href="#contact">Contact</a>
+      <button id="darkModeToggle" title="Toggle Dark Mode">☀️</button>
+    </nav>
+    <a href="resume.pdf" download class="download-btn">⬇ Download Resume</a>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="man.jpg" alt="Maneendra Kummari" class="profile-img" />
+      <p class="fade-in">Motivated and detail-oriented aspiring Software Development Engineer seeking an internship opportunity to apply and expand skills in full-stack development, problem-solving, and database systems. Eager to contribute to impactful projects in a growth-driven environment while continuously learning modern technologies.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Java, Python</li>
+      <li><strong>Web Development:</strong> HTML5, CSS3, JavaScript, React.js, PHP, Spring Boot</li>
+      <li><strong>Databases:</strong> MySQL, MongoDB, XAMPP</li>
+      <li><strong>Tools:</strong> VS Code, Jupyter, Git, GitHub</li>
+      <li><strong>Software:</strong> REST APIs</li>
+      <li><strong>Concepts:</strong> OOP, DSA, JDBC, Debugging</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Number Guessing Game (Jul 2024):</strong> Terminal game with random number generation, difficulty levels, and user feedback.</li>
+      <li><strong>Online Quiz Application (Mar–Apr 2025):</strong> Developed a full-stack web application enabling users to register, log in, and take timed quizzes, with an admin panel for managing questions and results. Built with Spring Boot, Hibernate, MySQL, and React.js.</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Internship Experience</h2>
+    <p><strong>Generative AI Intern – SmartBridge (Virtual)</strong> (Jun–Jul 2024)</p>
+    <ul>
+      <li>Learned NLP, transformer models, and chatbot design.</li>
+      <li>Built a text-generation chatbot using pretrained models.</li>
+    </ul>
+    <p><strong>Java Programming Intern – Bist Technologies (Virtual)</strong> (May–Jul 2025)</p>
+    <ul>
+      <li>Practiced OOP in Java and modular design.</li>
+      <li>Built Java apps using file I/O, exception handling, and JDBC.</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>B.Tech in Artificial Intelligence & Data Science</strong></p>
+    <p>Seshadri Rao Gudlavalleru Engineering College (2022–2026) — CGPA: 8.5/10</p>
+
+    <p><strong>Intermediate (MPC)</strong></p>
+    <p>Narayana Jr. College, Poranki (2020–2022) — Percentage: 92%</p>
+
+    <p><strong>SSC</strong></p>
+    <p>St. Joseph [EM] School, Kanigiri (2019–2020) — GPA: 9.3/10</p>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>NPTEL: Introduction to IoT (Elite)</li>
+      <li>HackerRank: Python</li>
+      <li>HackerRank: Java</li>
+    </ul>
+  </section>
+
+  <section id="strengths">
+    <h2>Strengths</h2>
+    <ul>
+      <li>Hardworking</li>
+      <li>Adaptable</li>
+      <li>Collaborative</li>
+      <li>Analytical</li>
+      <li>Curious</li>
+      <li>Responsible</li>
+      <li>Focused</li>
+      <li>Innovative</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:maneendra.kummari2004@gmail.com" target="_blank">maneendra.kummari2004@gmail.com</a></p>
+    <p>Phone: <a href="tel:9346182373">9346182373</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/maneendra-kummari-1432a71b0/" target="_blank">linkedin.com/in/maneendra-kummari</a></p>
+    <p>GitHub: <a href="https://github.com/Maneendrakummari" target="_blank">github.com/Maneendrakummari</a></p>
+    <div class="social-icons">
+      <a href="mailto:maneendra.kummari2004@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/maneendra-kummari-1432a71b0/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Maneendrakummari" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Maneendra Kummari. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("darkModeToggle");
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      toggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+    });
+  </script>
+</body>
+</html>

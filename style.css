@@ -1,0 +1,208 @@
+/* Import fonts */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: linear-gradient(to right, #fdf0d5, #f5e7cd);
+  background-color: #fdf0d5;
+  color: #222;
+  transition: background 0.4s, color 0.4s;
+}
+
+h1, h2, h3, h4, h5, h6, nav a, .download-btn {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Section cards */
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(4px);
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Light Mode - Section Colors */
+#about { background: #e3f2fd; }
+#skills { background: #ede7f6; }
+#projects { background: #fce4ec; }
+#experience { background: #e8f5e9; }
+#education { background: #fffde7; }
+#certifications { background: #f5f5f5; }
+#strengths { background: #e0f7fa; }
+#contact { background: #fff3e0; }
+
+header {
+  background: #1e1e2f;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+.download-btn {
+  margin-top: 15px;
+  display: inline-block;
+  padding: 10px 18px;
+  background: #00c6ff;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 198, 255, 0.6);
+  transition: background 0.3s ease, transform 0.3s;
+}
+.download-btn:hover {
+  background: #005fa3;
+  transform: scale(1.05);
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+.profile-img {
+  width: 160px;
+  border-radius: 50%;
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Social Media Icons */
+.social-icons {
+  margin-top: 10px;
+}
+.social-icons a {
+  color: #333;
+  margin: 0 8px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+.social-icons a:hover {
+  color: #0077cc;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background-color: #101820;
+  color: #e0e0e0;
+}
+
+body.dark-mode header {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode section {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode #about { background: #244b63; }
+body.dark-mode #skills { background: #3c2d57; }
+body.dark-mode #projects { background: #5c3447; }
+body.dark-mode #experience { background: #325138; }
+body.dark-mode #education { background: #55532a; }
+body.dark-mode #certifications { background: #444444; }
+body.dark-mode #strengths { background: #2a5555; }
+body.dark-mode #contact { background: #5c3e2a; }
+
+body.dark-mode section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode nav a,
+body.dark-mode .download-btn {
+  color: #ffffff;
+}
+
+body.dark-mode .download-btn {
+  background-color: #0077cc;
+  box-shadow: 0 0 12px rgba(0, 119, 204, 0.6);
+}
+
+body.dark-mode .download-btn:hover {
+  background-color: #005fa3;
+}
+
+body.dark-mode .social-icons a {
+  color: #e0e0e0;
+}
+
+body.dark-mode .social-icons a:hover {
+  color: #00c6ff;
+}
+
+/* Dark Mode Button */
+#darkModeToggle {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+#darkModeToggle:hover {
+  transform: rotate(15deg);
+}
+#contact {
+  color: hsl(0, 83%, 2%);
+}
+
+#contact a {
+  color: hwb(248 9% 40% / 0.032);
+  text-decoration: underline;
+}
+
+#contact a {
+  color: #00c6ff;
+}
+
+/* Dark mode contact colors */
+body.dark-mode #contact {
+  color: #ffffff;
+}
+
+body.dark-mode #contact a {
+  color: #ffffff;
+}
+
+body.dark-mode #contact a:hover {
+  color: #00c6ff;
+}
